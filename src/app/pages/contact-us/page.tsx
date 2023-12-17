@@ -6,9 +6,9 @@ import { faEnvelope, faMapSigns} from '@fortawesome/free-solid-svg-icons';
 
 const ContactUS = () => {
   return (
-    <div>
+    <div className='h-screen overflow-x-hidden relative'>
       <Header hasLogo={true} />
-      <div className='w-[35%] mx-auto mt-32'>
+      <div className='md:w-[35%] w-[90%] mx-auto mt-32'>
         <h2 className='text-center font-bold text-lg text-main-11'>Contact</h2>
         <div className='flex justify-between text-base text-main-4 mt-3'>
           <div>

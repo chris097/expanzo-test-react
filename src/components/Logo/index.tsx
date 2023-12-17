@@ -4,7 +4,7 @@ import logo from '@/public/svgs/logo.svg';
 
 const Logo:React.FC = () => {
   return (
-     <Image src={logo} alt='expanzo logo' />
+     <Image className='md:w-[225.46px] md:h-full w-44' src={logo} alt='expanzo logo' />
   )
 }
 
