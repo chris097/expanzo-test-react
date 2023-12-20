@@ -1,7 +1,7 @@
 'use client'
+import { useEffect, useState } from 'react';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
-import { useState } from 'react';
 import Logo from '@/components/Logo';
 
 interface ITabProps {
@@ -11,7 +11,6 @@ interface ITabProps {
 const tabs: ITabProps[] = [
   {name: 'All'}, {name: 'Companies'}, {name: 'Phones'}
 ];
-
 
 export default function Home() {
 
@@ -25,6 +24,7 @@ export default function Home() {
         <div className='flex items-center gap-16 md:mt-20 mt-14'>
           {tabs.map((tab, index) => (
             <div
+              role='tab'
               onClick={() => setActiveTab(index)}
               className={`text-xl pb-1.5 
               ${activeTab === index ?
