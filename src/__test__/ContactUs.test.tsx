@@ -1,7 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
-import ContactUS from './page';
+import ContactUS from '../app/pages/contact-us/page';
 
 test('renders ContactUS component with correct information', () => {
   render(<ContactUS />);
@@ -10,9 +9,7 @@ test('renders ContactUS component with correct information', () => {
   expect(screen.getByText('Headquater')).toBeInTheDocument();
   expect(screen.getByText('DHO s.r.o')).toBeInTheDocument();
   expect(screen.getByText('Bor̃ivojova 878/35')).toBeInTheDocument();
-    expect(screen.getByText('130 00 Praha 3')).toBeInTheDocument();
-    
-    // expect(screen.getByAltText('expanzo logo')).toBeInTheDocument();
+  expect(screen.getByText('130 00 Praha 3')).toBeInTheDocument();
 
   expect(screen.getByText('Email')).toBeInTheDocument();
   expect(screen.getByText('info@expanzo.com')).toBeInTheDocument();

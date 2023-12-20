@@ -44,6 +44,7 @@ const Header: React.FC<IHeader> = ({ hasLogo = false }) => {
                 <div className='flex items-center gap-10'>
                     <FontAwesomeIcon className='h-8 text-main-8 md:block hidden' icon={faBars} />
                     <FontAwesomeIcon onClick={() => setMobileNav(!mobileNav)} className='h-8 md:hidden block text-main-8' icon={faBars} />
+                    <Image className='md:hidden block' src={logo} alt='expanzo logo' />
                     <nav className='md:flex text-sm hidden gap-8 text-white font-medium'>
                         <Link href='/'>DASHBOARD</Link>
                         <Link href='/pages/contact-us'>CONTACT</Link>

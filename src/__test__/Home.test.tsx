@@ -1,7 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import '@testing-library/jest-dom';
-import Home from './page';
+import Home from '../app/page';
 
 test('renders Home component with default state', () => {
   render(<Home />);
@@ -11,8 +10,6 @@ test('renders Home component with default state', () => {
   expect(screen.getByText('Companies')).toHaveClass('text-main-10');
   expect(screen.getByText('Phones')).toHaveClass('text-main-10');
 
-  // Check if the logo is present
-//   expect(screen.getByAltText('expanzo logo')).toBeInTheDocument();
 });
 
 test('changes active tab on click', () => {
